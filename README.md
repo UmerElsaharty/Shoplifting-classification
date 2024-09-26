@@ -11,6 +11,8 @@ This project implements a video classification model using GRU layers. The model
 - [Training Process](#training-process)
 - [Feature Extraction](#feature-extraction)
 - [Normalization](#normalization)
+- [Augmentation](#augmentation)
+- [Test](#test)
 
 
 ## Introduction
@@ -50,3 +52,8 @@ Each video was processed frame by frame. The ResNet-50 model extracted **2048-di
 
 The extracted features were normalized using MinMax scaling, which was essential to ensure that the features fell within a suitable range for effective training.
 
+## Augmentation
+Used some augmentation techiques expressed in the aug.py
+
+## Test
+test the model by picking 20 frames and classify based on them in the test
