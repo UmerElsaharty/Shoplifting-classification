@@ -39,7 +39,7 @@ The model uses a custom-built ResNet-50 for feature extraction. The extracted fe
 
 ## Training Process
 
-- The videos were broken down into frames, and frame-level features were extracted using the ResNet-50 model.
+- The videos were broken down into frames,applying masks to fix the number of frames extracted from each video, and frame-level features were extracted using the ResNet-50 model.
 - GRU was used to model the sequence of these extracted features.
 - A combination of cross-entropy loss and Adam optimizer was used for training the model.
 - **Learning Rate Scheduling**: Gradual learning rate decay was applied during training.
